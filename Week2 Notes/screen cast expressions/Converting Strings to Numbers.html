@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+
+<script type="text/javascript">
+
+    var myString = "56.02 degrees centigrade";
+    var myInt;
+    var myFloat;
+
+    console.log("\"" + myString + "\" is " + parseInt(myString) + " as an integer" + "<BR>"); //<BR> line break
+    /*
+    write to the page the converted integer value of myString displayed inside a user-friendly
+    sentence you build up using string concatenation. Notice that you use the escape sequence \
+    quotes (") around teh string you are converting
+    */
+
+
+    /*
+    As you can see, you can use parseInt() and parseFloat() in the same places you would us a
+    number itself or a variable containing a number. 2 conversions are hapening below.
+    First it converts myString to an integer, because that's what you asked for by using parseInt().
+    Then it automatically coverts that integer number back to a string, so it can be concatenated
+    with the other strings to make up your sentence.
+    */
+
+    myInt = parseInt(myString);
+   console.log("\"" + myString + "\" when converted to an integer equals" + myInt + "<BR>");
+    /*
+    Next you do the same conversion of myString using parseInt(), but this time you store the result in
+    the myInt variable. On the following line you use the result in some text you display to the user:
+     */
+
+    /*
+    +, when a string and a number are involved, means you want the myInt value converted to a string and
+    concatenated to the rest of the string so it can be displayed.
+     */
+
+    myFloat = parseFloat(myString);
+   console.log("\"" + myString + "\" when converted to a floating point number equals " + myFloat);
+
+    /*
+    you use parseFloat() to convert the string in myString to a floating-point number, which you store
+    in the variable myFloat. This time the decimal point is considered to be a valid part of the number,
+    so it's anything after the 2 that is ignored.
+     */
+
+    </script>
+</body>
+</html>

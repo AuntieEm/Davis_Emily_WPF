@@ -24,10 +24,10 @@ Comparing objects for decision making
 conditional logic - Relational Expressions
  */
 
-var kidHeight = prompt("How tall is the kid?",30);
+var kidHeight = 47;
 var minHeight = 48
 
-if (kidHeight > 48){
+if (kidHeight > minHeight){
     //code performed in condition is true
     //if the kid is over 48 inches in height
     console.log("You can ride the coaster!");
@@ -40,4 +40,19 @@ console.log("What comes after?");
 /*
 Screencast:  Condition with Expression
 conditional logic - with an expression
+ */
+
+sneakerLift = 2;
+
+if ((kidHeight + sneakerLift) > minHeight){
+    //code performed in condition is true
+    //if the kid is over 48 inches in height
+    console.log("You can ride the coaster!");
+}
+
+
+
+
+/*
+
  */

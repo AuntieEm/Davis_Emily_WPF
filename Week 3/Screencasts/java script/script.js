@@ -107,3 +107,48 @@ else{
     console.log("Sorry kid, you've got some growing to do first.");
 }
 //prints:  you can ride
+
+
+
+
+/*
+Screencast:  else if
+choosing between three or more blocks of code
+ */
+
+var kidHeight5 = 52;
+var minHeight2 = 48;
+var wParentHeight = 45; //the height of the kid with the parent
+
+//if the child is old enough, print to the console "you can ride."
+//if the kid is over 48 inches in heiths
+if(kidHeight5 > minHeight2){
+    //you can ride!
+    console.log("You can ride the coaster!");
+}else if(kidHeight5 > wParentHeight){
+    //you can ride with a parent present
+    console.log("You can ride, but only with a parent present.");
+}else{
+    //sorry you have growing to do
+    console.log("Sorry kid, you've got some growing to do first!");
+}
+//prints:  sorry...
+
+var kidHeight6 = 43;
+var minHeight3 = 48;
+var wParentHeight2 = 50; //the height of the kid with the parent
+
+//if the child is old enough, print to the console "you can ride."
+//if the kid is over 48 inches in heiths
+if(kidHeight6 > minHeight3){
+    //you can ride!
+    console.log("You can ride the coaster!");
+}else if(kidHeight6 < wParentHeight2){
+    //you can ride with a parent present
+    console.log("You can ride, but only with a parent present.");
+}else{
+    //sorry you have growing to do
+    console.log("Sorry kid, you've got some growing to do first!");
+}
+
+//prints:  only with parent

@@ -152,3 +152,26 @@ if(kidHeight6 > minHeight3){
 }
 
 //prints:  only with parent
+
+
+
+
+/*
+Screencast:  Relational Operators
+comparing 2 variables or values
+comparison results in true or false
+ */
+
+// = assigns value
+//  equality    ==
+        //  read as "same as"    compares values
+// strict equality  ===     "The same value AND the same type" compares value and type
+        //best practice-faster-more efficient
+// inequality   !=
+    //"is not the same as"
+// greater than >
+// less than    <
+//greater than or equal to  >=
+//less than or equal to     <=
+
+

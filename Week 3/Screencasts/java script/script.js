@@ -175,3 +175,73 @@ comparison results in true or false
 //less than or equal to     <=
 
 
+
+
+
+/*
+Screencast:  Logical Operators
+Comparing pairs of TRUE or FALSE
+ */
+
+/*
+Reusable code
+
+comparison results in true or false
+used for comparisons or boolean variables
+
+&&  and
+        true && true = true
+        true && false = false
+        false && true = false
+        false && false = false
+
+||  Or
+    requires at least one pair to be true for the whole pair to be true.
+        true || true = true
+        true || false = true
+        false || true = true
+        false || false = false
+
+^   Exclusive or (xor)
+    translates as "either one or the other but not both."
+
+!   Not
+    used to flip the meaning of the object
+    if more than one are true, the result is false
+    a!=b the same as !(a===b)
+    a<b same as !(a<b)
+    a === b && b === c
+
+ */
+
+/*
+AND OPERARTOR
+ */
+var budget = 300;
+var iPhonePrice = 199.99;
+var parCheck = 200;
+
+//if the price of the phone is less than our budget AND if our paycheck is over 300.
+if(iPhonePrice < budget && parCheck > 300){
+    console.log("We can buy the phone!");
+
+}else{
+    console.log("NO PHONE FOR YOU!");
+}
+
+
+/*
+OR OPERATOR
+ */
+
+var budget2 = 100;
+var iPhonePrice2 = 199.99;
+var wonLottery = true;
+
+//if the price of the phone is less than our budget AND if our paycheck is over 300.
+if(iPhonePrice2 < budget2 || wonLottery === true){
+    console.log("We won the lottery! We can buy the phone!");
+
+}else{
+    console.log("No lottery. No phone!");
+}

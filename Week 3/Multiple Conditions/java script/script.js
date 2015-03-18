@@ -85,3 +85,73 @@ Enter "30"
 my age is NOT between 0 and 10
 my age is between 30 and 39 or my age is between 80 and 89
  */
+
+
+
+//Else & Else If Statements
+
+if (myAge >= 0 && myAge <= 10)
+{
+    console.log("My age is between 0 and 10.");
+}
+
+if ( !(myAge >= 0 && myAge <= 10))
+{
+    console.log("My age is NOT between 0 and 10");
+}
+
+/*
+ The ﬁ rst if statement tests whether myAge is between 0 and 10, and the second for the situation where
+ myAge is not between 0 and 10. However, JavaScript provides an easier way of achieving this: with an
+ else statement. Again, the use of the word else is similar to its use in the English language. You might
+ say, “If it is raining, I will take an umbrella; otherwise I will take a sun hat.” In JavaScript you can say
+ if the condition is true, then execute one block of code; else execute an alternative block. Rewriting
+ the preceding code using this technique, you would have the following:
+ */
+
+
+if (myAge >= 0 && myAge <= 10)
+{
+    console.log("My age is between 0 and 10.");
+}
+else
+{
+    console.log("My age is NOT between 0 and 10");
+}
+
+/*
+ Writing the code like this makes it simpler and therefore easier to read. Plus it also saves JavaScript from
+ testing a condition to which you already know the answer.
+ */
+
+if (myAge >= 0 && myAge <= 10)
+{
+    console.log("My age is between 0 and 10.");
+}
+else if ( (myAge >= 30 && myAge <= 39) || (myAge >= 80 && myAge <= 89) )
+{
+    console.log("My age is between 30 and 39 " + "or my age is between 80 and 89.");
+}
+else
+{
+    console.log("My age is NOT between 0 and 10, " + "nor is it between 30 and 39, nor is it between 80 and 89.");
+}
+
+/*
+ The ﬁ rst if statement checks whether myAge is between 0 and 10 and executes some code if that’s
+ true. If it’s false, an else if statement checks if myAge is between 30 and 39 or 80 and 89, and
+ executes some other code if either of those conditions is true. Failing that, you have a ﬁ nal else state-
+ ment, which catches the situation in which the value of myAge did not trigger true in any of the earlier
+ if conditions.
+ */
+
+if (myAge >= 0 && myAge <=10) {
+    console.log("My age is between 0 and 10.");
+    if (myAge == 5) {
+        console.log("You are 5 years old.");
+    }
+}
+else
+{
+    console.log("My age is NOT between 0 and 10.");
+}

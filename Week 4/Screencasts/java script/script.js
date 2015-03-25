@@ -1,5 +1,7 @@
 //Screencast:  Basic Function Structure
 
+
+//function definition
 function outptMsg() {
     console.log("Hello World.");
 }
@@ -15,3 +17,8 @@ function calcArea() {
 
 
 //Screencast:  Function Invocation - Telling the function to run
+
+//function call
+calcArea();//invoke the function
+calcArea();
+calcArea();

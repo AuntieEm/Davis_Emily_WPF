@@ -150,3 +150,15 @@ while (b > 0) { //checks the condition
 }
 
 
+console.log("-----Do While Loops-----");
+
+var c = 10;
+
+do {
+    console.log(c + " kegs on the wall.");
+    c--;
+}
+while (c > 0);
+
+//tells it to run the code inside of do as long as the condition inside while is true.
+//it will be run before it can decide if the condtion is true or false.

@@ -172,3 +172,79 @@ console.log("-----For Loops-----");
 for (var i = 10; i > 0; i --) {
     console.log(i + " kegs on the wall.");
 }
+
+
+
+/*
+Math.ceil() --- returns the highest number
+Math.floor() --- returns the lowest number
+Math.round() --- returns the nearest equivalent integer
+parseInt() --- returns the number as
+Math.random() --- choses a random number
+Math.pow() --- raises the number to a specified power using 2 parameters
+fix() --- will fix a number to a ceratin amount of decimal places
+toFixed() --- cuts a number off after a certain point
+max() --- set a value for a maximum number
+min () --- set a value for a minimum number
+ */
+
+
+document.write("--- Chapter 5 Example:  Rounding Methods Results Calcualtor ---");
+
+var myNumber = prompt("Enter the number to be rounded.", 87.8658768);
+
+document.write("<h3>The number you entered was " + myNumber + "</h3><br />");
+document.write("<p>The rounding results for this number are</p>");
+document.write("<table width='150' border='1'>");
+document.write("<tr<th>Method</th><th>Result</th></tr>");
+document.write("<tr><td>parseInt()</td><td>" + parseInt(myNumber) + "</td></tr>");
+document.write("<tr><td>ceil()</td><td>" + Math.ceil(myNumber) + "</td></tr>");
+document.write("<tr><td>floor()</td><td>" + Math.floor(myNumber) + "</td></tr>");
+document.write("<tr><td>round()</td><td>" + Math.round(myNumber) + "</td></tr>");
+document.write("</table>");
+
+
+
+document.write("--- The random() Method --- <br>");
+document.write("  ");
+
+
+var throwCount;
+var diceThrow;
+for (throwCount = 0; throwCount < 10; throwCount++){
+    diceThrow = (Math.floor(Math.random() * 6) + 1);
+    document.write(diceThrow + "<br>");
+}
+
+document.write("--- Using pow() --- <br>");
+
+function fix(fixNumber, decimalPlaces){
+    var div = Math.pow(10,decimalPlaces);
+    fixNumber = Math.round(fixNumber * div) / div;
+    return fixNumber;
+}
+
+var number1 = prompt("Enter the number with decimal places you want to fix", 54.87476576);
+var number2 = prompt("How many decimal places do you want?", 2);
+
+document.write(number1 + " fixed to " + number2 + " decimal places is: <br />");
+document.write(fix(number1,number2) + "<br />");
+
+
+document.write("--- Number Object -- <br>");
+var firstNumber = new Number(123);  //as number
+var secondNumber = new Number('123');   //as string
+var myNumber = 123.765; //as number
+var myNumber = "123.567";   //as string
+
+
+document.write("--- The toFixed() Method ---<br>");
+var itemCost = 9.99;
+var itemCostAfterTax = 9.99 * 8.25;
+document.write("Item cost is $" + itemCostAfterTax + "<br />");
+itemCostAfterTax = itemCostAfterTax.toFixed(2);
+document.write("Item cost fixed to 2 decimal places is $" + itemCostAfterTax + "<br />");
+
+
+
+

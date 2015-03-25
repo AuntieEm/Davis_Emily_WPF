@@ -127,6 +127,7 @@ functionName();
 
 //works the same way just in a different order
 
+/*
 var calcArea = function(width, height){ //defining
     var area = width * height;
     return area;
@@ -134,3 +135,18 @@ var calcArea = function(width, height){ //defining
 var a = calcArea(20, 30); //invoking
 
 console.log(a);
+    */
+
+//Loops
+
+console.log("-----loops-----");
+
+var b = 50; //sets up the index
+
+while (b > 0) { //checks the condition
+    console.log(b + "kegs on the wall.");
+    b--;    //increments or decrements the index
+    //counts down from var b.
+}
+
+

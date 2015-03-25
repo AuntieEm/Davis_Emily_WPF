@@ -27,7 +27,7 @@ calcArea();//invoke the function
 
 
 //Screencast:  Variable Scope - Inside and outside of functions
-
+/*
 var width = 5; //scoped to larger area
 
 function calcArea() {
@@ -39,7 +39,7 @@ function calcArea() {
 console.log(width);//used the variable outside the function
 calcArea();
 
-
+*/
 
 
 //Screencast:  Arguments and Parameters - Getting stuff into a function
@@ -59,7 +59,7 @@ function calcArea(w, h){ //storage bins - w=30, h=20
     console.log(area);
 }
     */
-
+/*
 function dogYears(age){//parameters
     //var age = 4;
     var dogYears = age * 7;
@@ -70,3 +70,18 @@ var age1 = 4;
 dogYears(age1);//arguments
 dogYears(4);
 dogYears(5);
+
+*/
+
+
+
+//screencast:  returning values - getting values back from a function
+
+var total = calcArea(30, 20);
+
+
+function calcArea(w, h){
+    var area = w * h;
+   return area; //function spitting the info out
+}
+console.log(total);

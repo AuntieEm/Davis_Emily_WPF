@@ -162,3 +162,13 @@ while (c > 0);
 
 //tells it to run the code inside of do as long as the condition inside while is true.
 //it will be run before it can decide if the condtion is true or false.
+
+
+
+
+//for loops - Shorthand version compared to while & do while loops
+console.log("-----For Loops-----");
+
+for (var i = 10; i > 0; i --) {
+    console.log(i + " kegs on the wall.");
+}

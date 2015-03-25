@@ -96,6 +96,7 @@ console.log(total);
 //both are functions
 //functions return values and procedures dont'
 
+/*
 
 //this is a function
 function calcArea(width, height){
@@ -108,6 +109,28 @@ function calcAreaP(width, height){
     var area = width * height;
     console.log(area); //no return
 }
+*/
 
 
 
+
+//Screencast:  Anonymous Functions - Masked heros of the JavaScript world
+//also called closures
+//created as it runs
+
+/*
+var functionName = function(){
+//code teh function runs
+}
+functionName();
+ */
+
+//works the same way just in a different order
+
+var calcArea = function(width, height){ //defining
+    var area = width * height;
+    return area;
+}
+var a = calcArea(20, 30); //invoking
+
+console.log(a);

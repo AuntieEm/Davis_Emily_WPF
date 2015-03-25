@@ -38,3 +38,35 @@ function calcArea() {
 }
 console.log(width);//used the variable outside the function
 calcArea();
+
+
+
+
+//Screencast:  Arguments and Parameters - Getting stuff into a function
+
+/*
+//function call
+funcName(argument1, argument2);
+function funcName(parameter1, parameter2) {
+    //code the function runs
+}
+ */
+/*
+calcArea(30, 20);//what's getting stored
+
+function calcArea(w, h){ //storage bins - w=30, h=20
+    var area = w * h;
+    console.log(area);
+}
+    */
+
+function dogYears(age){//parameters
+    //var age = 4;
+    var dogYears = age * 7;
+    console.log("Sparky is " + dogYears + " years old.");
+}
+//passing values to arguments.
+var age1 = 4;
+dogYears(age1);//arguments
+dogYears(4);
+dogYears(5);

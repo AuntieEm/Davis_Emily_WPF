@@ -180,7 +180,7 @@ Math.ceil() --- returns the highest number
 Math.floor() --- returns the lowest number
 Math.round() --- returns the nearest equivalent integer
 parseInt() --- returns the number as
-Math.random() --- choses a random number
+Math.random() --- choses a random number between 0 and .999 but not 1. a random percentage but not 100%
 Math.pow() --- raises the number to a specified power using 2 parameters
 fix() --- will fix a number to a ceratin amount of decimal places
 toFixed() --- cuts a number off after a certain point
